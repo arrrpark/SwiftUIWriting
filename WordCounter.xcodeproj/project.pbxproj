@@ -16,6 +16,8 @@
 		0A65689A281E7C0000082B9C /* WritingSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A656899281E7C0000082B9C /* WritingSaveView.swift */; };
 		0A65689C281E800300082B9C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65689B281E800300082B9C /* Colors.swift */; };
 		0A6568A0281E873000082B9C /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65689F281E873000082B9C /* Image+Extension.swift */; };
+		0A6568A2281EA24700082B9C /* CornerRadiusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6568A1281EA24700082B9C /* CornerRadiusStyle.swift */; };
+		0A6568A5281EA27200082B9C /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6568A4281EA27200082B9C /* View+Extension.swift */; };
 		0A69F7FF28199CED002E7FCB /* WordCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69F7FE28199CED002E7FCB /* WordCounterApp.swift */; };
 		0A69F80128199CED002E7FCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69F80028199CED002E7FCB /* HomeView.swift */; };
 		0A69F80328199CF2002E7FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A69F80228199CF2002E7FCB /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		0A656899281E7C0000082B9C /* WritingSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSaveView.swift; sourceTree = "<group>"; };
 		0A65689B281E800300082B9C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A65689F281E873000082B9C /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		0A6568A1281EA24700082B9C /* CornerRadiusStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyle.swift; sourceTree = "<group>"; };
+		0A6568A4281EA27200082B9C /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		0A69F7FB28199CED002E7FCB /* WordCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A69F7FE28199CED002E7FCB /* WordCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCounterApp.swift; sourceTree = "<group>"; };
 		0A69F80028199CED002E7FCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -122,6 +126,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6568A3281EA25500082B9C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0A69F82F2819B51D002E7FCB /* EssayTextView.swift */,
+				0A6568A1281EA24700082B9C /* CornerRadiusStyle.swift */,
+				0A54E137281D22BC003736AB /* BottomSheetView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		0A69F7F228199CED002E7FCB = {
 			isa = PBXGroup;
 			children = (
@@ -148,14 +162,13 @@
 				0A54E13B281D5201003736AB /* WordCounter.entitlements */,
 				0A69F7FE28199CED002E7FCB /* WordCounterApp.swift */,
 				0A69F82A2819ADD3002E7FCB /* extensions */,
+				0A6568A3281EA25500082B9C /* Components */,
 				0AA208F2281C8CD000B54328 /* Model */,
 				0AA208EC281C7E3A00B54328 /* Home */,
 				0AA208ED281C7E4900B54328 /* Writing */,
 				0A69F8282819AD45002E7FCB /* Util.swift */,
 				0A65689B281E800300082B9C /* Colors.swift */,
 				0AF84EF5281AD356000D1BCF /* UserDefaultsUtil.swift */,
-				0A69F82F2819B51D002E7FCB /* EssayTextView.swift */,
-				0A54E137281D22BC003736AB /* BottomSheetView.swift */,
 				0A69F80228199CF2002E7FCB /* Assets.xcassets */,
 				0A69F80428199CF2002E7FCB /* Preview Content */,
 			);
@@ -195,6 +208,7 @@
 				0AF84EFD281AFEA1000D1BCF /* URL+Extension.swift */,
 				0A54E13C281D57D2003736AB /* UIApplication+Extension.swift */,
 				0A65689F281E873000082B9C /* Image+Extension.swift */,
+				0A6568A4281EA27200082B9C /* View+Extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -370,6 +384,7 @@
 				0AA208EF281C86DA00B54328 /* HomeBottomOptionBar.swift in Sources */,
 				0A6568A0281E873000082B9C /* Image+Extension.swift in Sources */,
 				0AF84EF4281A8EB2000D1BCF /* WritingViewModel.swift in Sources */,
+				0A6568A2281EA24700082B9C /* CornerRadiusStyle.swift in Sources */,
 				0AF84EFC281AE0D4000D1BCF /* Date+Extension.swift in Sources */,
 				0AF84EF8281AD9F0000D1BCF /* HomeViewModel.swift in Sources */,
 				0A54E13A281D4753003736AB /* OrderBySelectionView.swift in Sources */,
@@ -379,6 +394,7 @@
 				0A69F8292819AD45002E7FCB /* Util.swift in Sources */,
 				0AF84EFE281AFEA1000D1BCF /* URL+Extension.swift in Sources */,
 				0A54E138281D22BC003736AB /* BottomSheetView.swift in Sources */,
+				0A6568A5281EA27200082B9C /* View+Extension.swift in Sources */,
 				0AA208EB281C7D9C00B54328 /* CreateFolderView.swift in Sources */,
 				0A65689A281E7C0000082B9C /* WritingSaveView.swift in Sources */,
 				0A54E13D281D57D2003736AB /* UIApplication+Extension.swift in Sources */,
@@ -569,7 +585,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = book.WordCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -603,7 +619,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = book.WordCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

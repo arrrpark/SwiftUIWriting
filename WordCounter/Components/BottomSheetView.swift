@@ -8,21 +8,14 @@
 import SwiftUI
 
 struct BottomSheetView<Content: View>: View {
-//    @Binding var isHidden: Bool
-
     let maxHeight: CGFloat
     let minHeight: CGFloat
     let content: Content
-
-//    private var offset: CGFloat {
-//        isOpen ? 0 : maxHeight - minHeight
-//    }
 
     init(maxHeight: CGFloat, @ViewBuilder content: () -> Content) {
         self.minHeight = 0
         self.maxHeight = maxHeight
         self.content = content()
-//        self._isOpen = isOpen
     }
 
     var body: some View {
@@ -31,7 +24,7 @@ struct BottomSheetView<Content: View>: View {
                 self.content
             }
             .frame(width: Util.screenBounds.width, height: self.maxHeight, alignment: .top)
-            .cornerRadius(16)
+            .cornerRadius(20, corners: [ .topLeft, .topRight])
             .frame(height: Util.screenBounds.height, alignment: .bottom)
         }
     }

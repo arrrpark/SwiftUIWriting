@@ -8,7 +8,6 @@
 import SwiftUI
  
 struct EssayTextView: UIViewRepresentable {
- 
     @Binding var text: String
     @Binding var textSize: CGFloat
  

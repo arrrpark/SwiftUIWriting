@@ -28,7 +28,7 @@ struct OrderBySelectionView: View {
             Spacer()
         }
         .frame(width: Util.screenBounds.width, height: 300 + safeAreaInsets.bottom)
-        .background(Color.blue)
+        .background(Color(Colors.getColor(hex: Colors.darkStateBlue.rawValue)))
     }
 }
 
@@ -54,6 +54,6 @@ struct SortItemView: View {
                 .foregroundColor(Color.white)
                 .offset(x: 20, y: 0)
             Spacer()
-        }.frame(height: 50).padding([.leading, .trailing], Util.shared.horizontalScale(30))
+        }.frame(height: 50).padding([.leading, .trailing], 30)
     }
 }
